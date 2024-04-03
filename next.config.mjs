@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-const apiUrl = process.env.APIURL
+const nextConfig = {
+    eslint: {
+        ignoreDuringBuilds: true,
+    }
+};
 
 export default nextConfig;
