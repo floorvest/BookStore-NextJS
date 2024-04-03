@@ -13,8 +13,8 @@ export default function BookCard({ book }: { book: Book}) {
             {book.writer}
           </p>
           <span className="text-red-600"><b>{book.point}</b> Point</span>
-          <span className="text-xs text-slate-300">
-            {book.tags.map((e) => e.name).join(',')}
+          <span className="text-xs text-slate-300 text-wrap">
+            {book.tags.map((e) => e.name).join(', ')}
           </span>
         </div>
       </li>
