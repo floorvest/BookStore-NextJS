@@ -6,7 +6,7 @@ import { useState } from 'react'
 
 export default function HeaderLogin() {
 
-    const [userId, setUserId] = useState(1)
+    const [userId, setUserId] = useState(0)
 
     if (userId == 0 && hasCookie('_auth_bookstore_me')) {
         const meString = getCookie('_auth_bookstore_me')
@@ -36,7 +36,7 @@ export default function HeaderLogin() {
       </>
     )}
 
-    {userId && (
+    {userId == 1 && (
         <>
             <Link
             href="/mybooks"
