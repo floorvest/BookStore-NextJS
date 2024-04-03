@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const BookApi = axios.create({
-    baseURL: 'http://bookstoreapi.patranto.my.id',
+    baseURL: 'https://bookstoreapi.patranto.my.id',
 });
 
 export function getBooks(page = 1, category = 0, query = '') {
